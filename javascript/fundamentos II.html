@@ -1,0 +1,181 @@
+<script type="text/javascript">
+ <!--ejercicio 1-->
+function big(x) {
+	for (var i = 0; i < x.length; i++) {
+	if (x[i]>0) {
+		x[i]="grande";
+	}
+}
+return x;
+}
+b= big([-1,3,5,-5]);
+console.log(b);
+
+<!--ejercicio 2-->
+function print(x) {
+var max= x[0];
+var min=x[0];
+	for (var i = 0; i < x.length; i++) {
+	 if (x[i]>max) {
+	 	max= x[i]}
+	 if (x[i]<min) {
+	  min= x[i]  
+	 	}
+	}
+	console.log(min);
+	return max;
+}
+b= print([-1,3,5,0]);
+console.log(b)
+<!--ejercicio 3-->
+function peprimero(x){
+	var impar;
+	var z= x[x.length-2];
+   for (var i = 0; i < x.length; i++) {
+   	if (x[i]%2!=0) {
+   		impar=x[i];
+   		break;
+   	}
+   	}
+   	return impar;
+}
+   b=peprimero([3,2,4,6]);
+   console.log(b)
+
+<!--ejercicio 4-->
+function doble(x) {
+	for (var i = 0; i < x.length; i++) {
+		x[i]= x[i]*2;
+
+	}
+	return x;
+}
+b= doble([1,2,3]);
+console.log(b)
+
+<!--ejercicio 5-->
+function conteo(x) {
+	var cont=0;
+	for (var i = 0; i < x.length; i++) {
+		if (x[i]>0) {
+		cont=cont+1;
+		}
+     x.pop(x.length-1);
+     x.push(cont);
+	}
+	return x;
+}
+b=conteo([-1,1,1,1]);
+console.log(b);
+
+<!--ejercicio 6-->
+function cero(x) {
+
+for (var i = 0; i <( x.length-2); i++) {
+
+	var valorseguido1=x[i];
+	var valorseguido2=x[i+1];
+	var valorseguido3=x[i+2];
+
+	if (valorseguido1%2!=0 && valorseguido2%2!=0 && valorseguido3%2!=0) {
+		console.log("¡que imparcial!");
+	}
+	if (valorseguido1%2==0 && valorseguido2%2==0 && valorseguido3%2==0) {
+		console.log("¡es para bien! "+valorseguido1+" "+valorseguido2+" "+valorseguido3);
+    }
+ }
+}
+b= cero([2,4,4,3,5,7,4,4,3,5,7,4,4,3,5,7,4,4,3,5,7,4,4,3,5,7,4,4,3,5,7,4,4,3,5,7]);
+
+<!-- ejercicio 7-->
+function arr(x) {
+ for (var i = 0; i < x.length; i++) {
+    if (i%2!=0) {
+    	x[i]=x[i]+1;
+    	console.log(x);
+    }
+ }
+	return x;
+}
+b= arr([2,-4,-5,2,3]);
+console.log(b);
+
+<!-- ejercicio 8-->
+function longuitud(x) {
+    for (var i = x.length-1;i>0; i--) {
+    	x[i]=x[i-1].length;
+    }
+    return x;
+}
+ b=longuitud(["programar","dojo", "genial"]);
+ console.log(b);
+
+ <!--ejercicio 9-->
+ function siete(x) {
+ 	for (var i = 0; i < x.length; i++) {
+ 		x[i]= x[i]+7;
+ 	}
+ 	return x;
+ }
+ b=siete([1,2,3]);
+ console.log(b);
+
+ <!--ejercicio 10-->
+ function swap(x) {
+	var z = [];
+	for (let i = x.length - 1; i >= 0; i--) {
+		z.push(x[i]);
+	}
+	return z;
+}
+b= swap([3,1,6,4,2])
+console.log(b);
+
+<!--ejercicio 11-->
+function negativo (x) {
+	for (var i = 0; i < x.length; i++) {
+	 if (x[i]>0) {
+	 	x[i]= x[i]*-1;
+	 }
+	}
+	return x;
+}
+b= negativo([1,-3,5]);
+console.log(b);
+
+<!--ejercicio 12-->
+function array (x) {
+	var cont=0;
+	for (var i =0; i < x.length; i++) {
+		if (x[i]=="comida") {
+			console.log("yummy");
+			cont=cont+1;
+        }
+        if (cont==0) {
+        	console.log("tengo hambre");
+        }
+	}
+}
+b=array(["sala","casa","cocina"]);
+
+<!--ejercicio 13-->
+function intercambio(x) {
+    [x[0],x[2],x[x.length-3], x[x.length - 1] ] = [x[x.length - 1],x[x.length-3],x[2], x[0]];
+    return x;
+}
+b= intercambio([0,1,2,3,5,6,7,8,9])
+console.log(b);
+e=intercambio([1,2,3,4,5,6]); 
+console.log(e);
+
+<!--ejercicio 14-->
+function numero (x,y) {
+    for (var i = 0; i < x.length; i++) {
+    	x[i]=x[i]*y;
+    }
+    return x;
+}
+ b= numero([1,2,3],3);
+ console.log(b);   
+
+</script>
