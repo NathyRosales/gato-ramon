@@ -1,0 +1,93 @@
+body{
+	background-color:black;
+}
+div#world{
+	position: relative;
+}
+.row div{
+	width:40px;
+	height: 40px;
+	display: inline-block;
+}
+.brick{
+	background-color: blue;
+}
+.coin{
+	background: url("estrella.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.diamont{
+	background: url("diamante.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	
+}
+#pacman{
+	background: url("zonic.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 40px;
+	height:40px;
+	margin-top:10px;
+	margin-left:10px;
+	position: absolute;
+	transform:rotate(0deg);
+}
+div.pacmanAr{
+	background: url("zonic.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	transform: rotate(-90deg);
+}
+
+div.pacmanAb{
+	background: url("zonic.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	transform: rotate(90deg);
+}
+
+div.pacmanD{
+	background: url("zonic.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	transform: rotate(0deg);
+}
+
+div.pacmanI{
+	background: url("zonic.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	transform: rotate(-180deg);
+}
+
+div.ghost{
+	background: url("eggman.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; 
+}
+#score{
+	border: 1px solid white;
+	width: 30px;
+	height: 30px;
+	color: blue;
+	padding: 7px;
+	text-align: center;
+	position: absolute;
+	top: 8px
+	left: 220px;
+
+}	
+
+.empty{
+
+}
