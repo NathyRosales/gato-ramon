@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ninja-desaparece</title>
+    <link rel="stylesheet" href="ninja1.css">
+</head>
+<body>
+    <div id="contenedor">
+    <img src="Amy_sonic_x_4.png">
+    <img src="Amy_sonic_x_4.png">
+    <img src="Amy_sonic_x_4.png">
+    <img src="Amy_sonic_x_4.png">
+    <img src="Amy_sonic_x_4.png">
+    <img src="Amy_sonic_x_4.png">
+    <img src="Amy_sonic_x_4.png">
+    <img src="Amy_sonic_x_4.png">
+    <button>restaurar</button>
+    </div>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+<script>
+$("img").click(function(){
+  $(this).hide("slow");
+});
+ $("button").click(function(){
+   $("img").toggle("slow");
+ });
+</script>
+</body>
+
+
+
+
+</html>
