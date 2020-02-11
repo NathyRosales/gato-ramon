@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UFT-8">
+    <title>demo jquery</title>
+    <link rel="stylesheet" href="actividad1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+   <div id="primero"> 
+       <h1>ADDCLASS</h1>
+        <button id="boton1">addclass</button>
+    <div class="azul">the butoon "red" to this paragraph</div>
+   </div>
+   <div id="segundo">
+       <h1>SLIDETOOGGLE</h1>
+        <button id="boton2">slidetoogle</button>
+       <div class="verde">click the butoon to slidetoogle a hidden imagen</div>
+       <img src="sonic.gif">
+      
+    </div>
+      <div id="tercero">
+          <h1>APPEND</h1>
+            <button id="boton3">append</button>
+           <div class="rojo">click the butoon to append a new paragraph</div>>
+    
+   </div>
+<script>
+$( "h1" ).click(function() {
+  $( this ).slideUp();
+});
+
+$( "#boton1" ).click(function() {
+  $(".azul").css("color","red")
+            .addClass( "myClass yourClass" );
+});
+$("#boton2").click(function() {
+    $( ".verde" ).toggle( "slow")
+ }, function(){
+    $("img").toggle("slow")             
+});
+$("#boton3").click(function(){
+    $(".rojo").append("<b> hola como estas!!-¿que cuentas de bueno?</b>")
+});
+
+</script>
+</body>
+</html>
