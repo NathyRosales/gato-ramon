@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Amy_Sonic</title>
+    <link rel="stylesheet" href="desplazamiento.css">
+</head>
+<body>
+    <div id="contenedor">
+        <img src="Amy_sonic_x_4.png" data-alt-src="sonic.gif"/>
+        <img src="Amy_sonic_x_4.png" data-alt-src="sonic.gif"/>
+        <img src="Amy_sonic_x_4.png" data-alt-src="sonic.gif"/>
+        <img src="Amy_sonic_x_4.png" data-alt-src="sonic.gif"/>
+    </div>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+<script>
+$("img").hover(function(){
+        var temp=$(this).attr("src");
+        $(this).attr("src",$(this).attr("data-alt-src"));
+        $(this).attr("data-alt-src",temp);
+});
+</script>
+</body>
+</html>
