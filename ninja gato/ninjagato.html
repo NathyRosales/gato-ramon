@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ninja-gato</title>
+    <link rel="stylesheet" href="ninjagato.css">
+</head>
+<body>
+    <div>  
+        <img src="ninja0.png" data-alt-src="cat0.png"/>
+    </div>
+    <div>
+        <img src="ninja1.png" data-alt-src="cat1.png"/>
+    </div>
+    <div>
+        <img src="ninja2.png" data-alt-src="cat2.png"/>
+    </div>
+    <div>
+        <img src="ninja3.png" data-alt-src="cat3.png"/>
+    </div>
+    <div>
+        <img src="ninja4.png" data-alt-src="cat4.png"/>
+    </div>
+    
+    
+</div> 
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+<script>
+    $("img").click(function(){
+        var temp=$(this).attr("src");
+        $(this).attr("src",$(this).attr("data-alt-src"));
+        $(this).attr("data-alt-src",temp);
+    });
+</script>
+</body>
