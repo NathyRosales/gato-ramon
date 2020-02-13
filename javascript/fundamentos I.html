@@ -5,141 +5,155 @@
 		<title>Algoritmo</title>
 	
 	<script type="text/javascript">
-// 	<!-- Ejercicio 1-->
-//   function returnOddArray(){
-//    x=[];
-//    for (var i = 1; i<= 225; i++) {
-//    	x.push(i);
-//    }
-//    return x;
-// }
-// y = returnOddArray();
-// console.log(y); 
+	
+	<!-- Ejercicio 1-->
+	//Escribe una función que devuelve un array con todos los número del 1 al 255.//
+  function returnOddArray(){
+   x=[];
+   for (var i = 1; i<= 225; i++) {
+   	x.push(i);
+   }
+   return x;
+}
+y = returnOddArray();
+console.log(y); 
  
-//  <!--ejercicio 2-->
+ <!--ejercicio 2-->
+ //Escribe una función que entregue la suma de todos los número pares del 1 al 1000 - Puedes usar un operador de módulo para este ejercicio.// 
 
-//  function pares(){
-//  var sum=0;
-//  for (var i = 0; i <= 1000; i++) {
-//  	sum=sum+i;
-// 
-// }
-// return sum;
-//  }
-//  console.log(pares());
+ function pares(){
+ var sum=0;
+ for (var i = 0; i <= 1000; i++) {
+ 	sum=sum+i;
 
- // <!--ejercicio 3-->
- // function impares(){
- // 	var sum=0;
- // 	for (var i = 1; i <= 5000; i++){
- // 	 if (i%2!=0){
- // 	 	sum=sum+1;
- // 	 }
- // 	}
- // 	return sum;
- // }
- // console.log(impares());
+}
+return sum;
+ }
+ console.log(pares());
 
-// <!--ejercicio 4-->
-// function itera(x){
-//   sum = 0;
-// for (var i = 0; i < x.length; i++) {
-// 	sum= sum +x[i]
-// }
-// return sum;
-// }
-// y = itera([1,2,3]);
-// console.log(y);
+ <!--ejercicio 3-->
+ //Suma impares hasta 5000 - Escribe una función que devuelva la suma de todos los números impares entre 1 y 5000 (ej: 1+3+5+...+4997+4999)//
+ function impares(){
+ 	var sum=0;
+ 	for (var i = 1; i <= 5000; i+2){
+ 	 	sum=sum+1;
+ 	 }
+ 	}
+ 	return sum;
+ }
+ console.log(impares());
 
-// <!--ejercicio 5-->
-// function mayor(x){
-//  var max=0;
-//  for (var i = 0; i < x.length; i++) {
-//  	if (x[i]>max) {
-//  		max= x[i];
-//  	}
-//  }
-//  	return max;
-//  }
-// y= mayor([-3,3,5,7]);
-// console.log(y);
+<!--ejercicio 4-->
+//Itera un arrayEscribe una función que devuelva la suma de todos los valores dentro de un array (ej:  [1,2,5] returns 8. [-5,2,5,12] returns 14).// 
+function itera(x){
+  sum = 0;
+for (var i = 0; i < x.length; i++) {
+	sum= sum +x[i]
+}
+return sum;
+}
+y = itera([1,2,3]);
+console.log(y);
 
-// <!--ejercicio 6-->
-// function promedio(x){
-// sum = 0;
-// for (var i = 0; i < x.length; i++) {
-// 	sum= sum +x[i]
-// };
-// return(sum/x.length)
-// }
-// y = promedio([1,3,5,7,20]);
-// console.log(y);
+<!--ejercicio 5-->
+//Encuentra el mayor (max) Dado un array con múltiples valores, escribe una función que devuelva el número mayor (ej: para [-3,3,5,7] el número mayor (max) es 7).//
 
-// // <!--ejercicio 7-->
-// // function returnOddArray(){
-// // 						   // your code here
-// // 						   x=[];
-// // 						   for (var i = 1; i<= 50; i+=2) {
-// // 						   	x.push(i);
-// // 						   }
-// // 						   return x;
-// // 						}
-// // 						y = returnOddArray();
-// // 						console.log(y); 
+function mayor(x){
+ var max=0;
+ for (var i = 0; i < x.length; i++) {
+ 	if (x[i]>max) {
+ 		max= x[i];
+ 	}
+ }
+ 	return max;
+ }
+y= mayor([-3,3,5,7]);
+console.log(y);
 
-// <!-- ejercicio 8-->
-// function mayor(x,y){
-// 	cont=0
-// 	for (var i = 0; i < x.length; i++) {
-// 		if (x[i]>y)  {
-// 			console.log(x[i]);
-// 		}
-// 	}
-// 	return x;
-// }
-// b = mayor([1,3,5,7],3);
+<!--ejercicio 6-->
+//Encuentra el promedio (avg) Dado un array con múltiples valores, escribe una función que devuelva el promedio de los valores (ej: para [1,3,5,7,20] el promedio es 7.2).//
+function promedio(x){
+sum = 0;
+for (var i = 0; i < x.length; i++) {
+	sum= sum +x[i]
+};
+return(sum/x.length)
+}
+y = promedio([1,3,5,7,20]);
+console.log(y);
 
-// <!--ejercicio 9-->
-// function cuadrado(x){
-//    for (var i = 0; i < x.length; i++) {
-//    	x[i]= x[i]*x[i];
-//    }
-//    return x;
-// }
-// y = cuadrado([1,5,10,-2]);
-// console.log(y); 
+<!--ejercicio 7-->
+//Array de impares Escribe una funci[on que devuelva un array de todos los números impares entre 1 y 50 (ej: [1,3,5, …, 47,49]). Pista: Usa el método ‘push’.//
+function returnOddArray(){					  
+   x=[];
+   for (var i = 1; i<= 50; i+=2) {
+   	x.push(i);
+   }
+   return x;
+}
+y = returnOddArray();
+console.log(y); 
 
-// <!-- ejercicio 10-->
-// function negativo(x){
-//  for (var i = 0; i < x.length; i++) {
-//  	if (x[i]<0) {
-//  		x[i]=0;
-//  	}
-//  }
-//  return x;
-// }
-// b= negativo([1,5,10,-2]);
-// console.log(b);
+<!-- ejercicio 8-->
+//Mayor que Y - Dado un valor Y, escribe una función que toma un array y devuelve los valores mayores que Y. Por ejemplo, si arr = [1,3,5,7] y Y = 3, tu función devolverá 2 (hay 2 números en el array mayores que 3, esto son 5 y 7). //
+function mayor(x,y){
+	cont=0
+	for (var i = 0; i < x.length; i++) {
+		if (x[i]>y)  {
+			console.log(x[i]);
+		}
+	}
+	return x;
+}
+b = mayor([1,3,5,7],3);
 
-// <!--ejercicio 11-->
-// function final(x){
-//  var max=0;
-//      min!=0;
-//      sum=0;
+<!--ejercicio 9-->
+//Cuadrados Dado un array con múltiples valores, escribe una función que reemplace cada valor por el cuadrado del mismo valor (ej: [1,5,10,-2] será [1,25,100,4]).//
+function cuadrado(x){
+   for (var i = 0; i < x.length; i++) {
+   	x[i]= x[i]*x[i];
+   }
+   return x;
+}
+y = cuadrado([1,5,10,-2]);
+console.log(y); 
 
-//  for (var i = 0; i < x.length; i++) {
-//  	if (x[i]>max) {
-//  		max= x[i];
-//  	}
-//  	if (x[i]<min) {
-//  		min=x[i];
-//  	}
+<!-- ejercicio 10-->
+
+//Negativos - Dado un array con múltiples valores, escribe una función que reemplace cualquier número negativo dentro del array por 0. Cuando el programa esté listo, el array no debiera contener números negativos (ej: [1,5,10,-2] se convertirá en [1,5,10,0]).//
+function negativo(x){
+ for (var i = 0; i < x.length; i++) {
+ 	if (x[i]<0) {
+ 		x[i]=0;
+ 	}
+ }
+ return x;
+}
+b= negativo([1,5,10,-2]);
+console.log(b);
+
+<!--ejercicio 11-->
+//Max/Min/Avg - Dado un array con múltiples valores, escribe una función que devuelva un nuevo array que solo contenga el valor mayor (max), menor (min) y promedio (avg) del array original (ej: [1,5,10,-2] devolverá [10,-2,3.5]).//
+function final(x){
+ var max=0;
+     min!=0;
+     sum=0;
+
+ for (var i = 0; i < x.length; i++) {
+ 	if (x[i]>max) {
+ 		max= x[i];
+ 	}
+ 	if (x[i]<min) {
+ 		min=x[i];
+ 	}
    
-//  }
-// y= mayor([-3,3,5,7]);
-// console.log(y);
+ }
+y= mayor([-3,3,5,7]);
+console.log(y);
 
 <!--ejercicio 12-->
+//Intercambia Valores -Escribe una función que intercambie el primer y el último valor de cualquier array. La extensión mínima predeterminada del array es 2 (ej: [1,5,10,-2] será [-2,5,10,1]). //
+
 function remplazo(x){
 	for (var i = 0; x.length; i++) {
 		if (x[i]<0) {
