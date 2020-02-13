@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>pokemon</title>
+        <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script> 
+        <script type="text/javascript">
+        
+            function pokemon(){
+                var pokemon="";
+                for (var i=1; i<150 ; i++){
+               pokemon ="<img src=https:raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+i+".png>"
+               $("#contenido").append(pokemon)
+                }
+            }
+            $(document).ready(function(){
+                pokemon();
+        });
+      
+       </script>
+    </head>
+    <body>
+    <div id="contenido"></div>
+    </body>
+ </html>
+ 
+
+      
+ 
