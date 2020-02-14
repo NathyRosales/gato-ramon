@@ -18,6 +18,8 @@
              $("#large_box").click(function(){
                $(this).children().css("background-color",random_color());
                $(this).css("background-color",random_color());
+             })
+                $(".side_box").click(function(evento){
             $(this).siblings().css ("background-color",random_color());
             evento.stopPropagation();
             })
